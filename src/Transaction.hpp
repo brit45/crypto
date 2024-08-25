@@ -17,7 +17,7 @@ class Transaction {
         /// @param To 
         /// @param From 
         /// @param Amount 
-        Transaction(std::string To, std::string From, uint Amount);
+        Transaction(char* To, char* From, uint Amount);
         ~Transaction();
 
         void setValid(bool val);
@@ -27,7 +27,9 @@ class Transaction {
 
     private:
 
-        std::string To, From, Hash;
+        char* To;
+        char* From;
+        char* Hash;
 
         uint Amount;
 

@@ -1,7 +1,7 @@
 #include "Transaction.hpp"
 
 
-Transaction::Transaction(std::string to, std::string from, uint amount) : 
+Transaction::Transaction(char* to, char* from, uint amount) : 
     To(to),
     From(from),
     Amount(amount) {
